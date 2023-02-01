@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public class Player {
+public class Player {
+private Double salary = 1000.0;
+
 }
