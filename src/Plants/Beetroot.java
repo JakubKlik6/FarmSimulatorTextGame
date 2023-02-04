@@ -1,6 +1,8 @@
 package Plants;
 
-public class Beetroot extends Seedlings{
+import Animals.Animals;
+
+public class Beetroot extends Seedlings implements seallable{
     public Integer landPrepCost = 10;
     public Integer protectCost = 5;
     public Integer tonsOfBeets = 3;
@@ -12,4 +14,8 @@ public class Beetroot extends Seedlings{
     }
 
 
+    @Override
+    public void sell(Animals age) {
+
+    }
 }

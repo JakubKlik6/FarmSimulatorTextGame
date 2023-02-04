@@ -11,4 +11,15 @@ public String playerName;
 
     public Player() {
     }
+
+    @Override
+    public String toString() {
+        return "Player{" +
+                "salary=" + salary +
+                ", farm=" + farm +
+                ", playerName='" + playerName + '\'' +
+                ", farmPrice=" + farmPrice +
+                ", numberOfHouses=" + numberOfHouses +
+                '}';
+    }
 }

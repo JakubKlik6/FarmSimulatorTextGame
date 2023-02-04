@@ -1,4 +1,4 @@
-package Animals;
+package Plants;
 
 import Animals.Animals;
 

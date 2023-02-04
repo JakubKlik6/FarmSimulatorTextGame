@@ -1,6 +1,6 @@
 package Animals;
 
-public class Cow extends Animals implements seallable{
+public class Cow extends Animals implements seallable {
     public Integer cowPrice = 50;
     public Integer cowWeight = 50;
     public Integer lengthOfMaturation = 20;
