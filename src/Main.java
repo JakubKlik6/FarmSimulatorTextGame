@@ -1,12 +1,15 @@
+import Plants.Seedlings;
+import Plants.Wheat;
+
 import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
-        UserWelcome();
-
         Player player1 = new Player();
+
+        player1.playerName =  UserWelcome();
 
         System.out.println("Now you can decide which farm you want to buy: \n");
 
@@ -18,13 +21,19 @@ public class Main {
         System.out.println("Farm 2" + farm2.toString());
         System.out.println("Farm 3" + farm3.toString());
 
-        buyingFarm();
+        int userChoice = buyingFarm();
 
+        switch (userChoice) {
+            case 1 -> player1.farm = farm1;
+            case 2 -> player1.farm = farm2;
+            case 3 -> player1.farm = farm3;
+        }
 
+        Wheat wheat = new Wheat();
 
     }
 
-    public static void UserWelcome()
+    public static String UserWelcome()
     {
         System.out.println("Hello and welcome to the farm simulator!");
 
@@ -32,11 +41,12 @@ public class Main {
         Scanner userInput = new Scanner(System.in);
         String userName = userInput.nextLine();
         System.out.println("\nHello " + userName);
+        return userName;
 
 
     }
 
-    public static void buyingFarm(){
+    public static int buyingFarm(){
         System.out.print("\nPress 1,2 or 3 to buy farm!: ");
 
         Scanner userInput = new Scanner(System.in);
@@ -48,15 +58,15 @@ public class Main {
         {
             if(num == 1) {
                 System.out.println("You have bought farm number 1!");
-                break;
+                return 1;
             }
             if(num == 2) {
                 System.out.println("You have bought farm number 2!");
-                break;
+                return 2;
             }
             if(num==3){
                 System.out.println("You have bought farm number 3!");
-                break;
+                return 3;
             }
             else
             {
