@@ -1,4 +1,8 @@
-public class Player extends Farm {
+package Properties;
+
+import Properties.Farm;
+
+public class Player extends Farm{
 private Double salary = 1000.0;
 public Farm farm;
 public String playerName;
@@ -14,12 +18,11 @@ public String playerName;
 
     @Override
     public String toString() {
-        return "Player{" +
-                "salary=" + salary +
-                ", farm=" + farm +
-                ", playerName='" + playerName + '\'' +
-                ", farmPrice=" + farmPrice +
-                ", numberOfHouses=" + numberOfHouses +
-                '}';
+        return "Your goods" +
+                "\nsalary=" + salary +
+                "\nfarm=" + farm +
+                "\nplayerName='" + playerName + '\'' +
+                "\nhouse=" + house +
+                "\nland=" + land ;
     }
 }
