@@ -8,7 +8,7 @@ public class Beetroot extends Seedlings implements seallable{
     public Integer tonsOfBeets = 3;
     public Integer lengthOfMaturation = 10;
     public Integer costOfHarvest = 100;
-    public Integer sellPrice = 800;
+    public Integer sellPrice = 8;
 
     public Beetroot() {
     }

@@ -8,7 +8,7 @@ public class Wheat extends Seedlings implements seallable{
     public Integer tonsOfWheat = 15;
     public Integer lengthOfMaturation = 30;
     public Integer costOfHarvest = 500;
-    public Integer sellPrice = 5000;
+    public Integer sellPrice = 20;
 
     public Wheat() {
     }

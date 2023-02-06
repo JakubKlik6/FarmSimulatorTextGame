@@ -4,7 +4,7 @@ import Animals.Animals;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Farm extends Animals {
+public class Farm extends Player {
     private static final Double DEFAULT_FARM_PRICE = 50.0;
 
     public Double farmPrice = DEFAULT_FARM_PRICE;

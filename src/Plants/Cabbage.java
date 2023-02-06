@@ -8,7 +8,7 @@ public class Cabbage extends Seedlings implements seallable{
     public Integer tonsOfCabbage = 5;
     public Integer lengthOfMaturation = 15;
     public Integer costOfHarvest = 150;
-    public Integer sellPrice = 1500;
+    public Integer sellPrice = 15;
 
     public Cabbage() {
     }
