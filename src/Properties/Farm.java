@@ -26,7 +26,7 @@ public class Farm extends Player {
 
     @Override
     public String toString() {
-        return "Farm price " + farmPrice + ", house capacity " + house.houseCapacity + " , land size " + land.numberOfPlants;
+        return ", House capacity " + house.houseCapacity + " , Land size " + land.numberOfPlants + "Number of animals " + "Number of plants ";
     }
 
 }

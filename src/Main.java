@@ -1,5 +1,3 @@
-import Animals.Animals;
-import Animals.Cow;
 import Properties.Farm;
 import Properties.House;
 import Properties.Land;
@@ -11,6 +9,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
+        int weekNumber = 1;
 
         //GAME STARTING UI
         Properties.Player player1 = new Properties.Player();
@@ -35,6 +35,8 @@ public class Main {
             case 3 -> player1.farm = farm3;
         }
 
+        System.out.println("You start your game at: 01.01.2021, it's first week of your journey!");
+        System.out.println("Good luck!");
 
         //GAMEPLAY STARTS HERE
         do {
@@ -68,6 +70,7 @@ public class Main {
                             player1.farm.house.houseCapacity -= 3;
                             player1.farm.house.CapacityCheck();
                             player1.salary -= 1;
+
 
                         }
                         if (userFirstChoice == 12) {
@@ -195,7 +198,7 @@ public class Main {
                     }
 
                     case 4:
-                        NextRound();
+                        NextRound(weekNumber);
                 }
             }
         } while (player1.salary > 0);
@@ -471,13 +474,37 @@ public class Main {
     }
 
 
-    public static void NextRound() {
-
+    public static int NextRound(int weekNumber) {
+        return weekNumber + 1;
     }
 
     private static void GameWinnerCheck(Player player1) {
         if (player1.salary > 5000) {
             System.out.println("You won! You are perfect and rich farmer!");
         }
+    }
+
+    public static void AnimalBuy(int playerSalary)
+    {
+        if(playerSalary > 0)
+        {
+
+        }
+
+    }
+
+    public static void AnimalSell(int playerSalary)
+    {
+
+    }
+
+    public static void PlantBuy(int playerSalary)
+    {
+
+    }
+
+    public static void PlantSell(int playerSalary)
+    {
+
     }
 }

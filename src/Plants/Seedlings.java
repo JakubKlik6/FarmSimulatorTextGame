@@ -1,6 +1,8 @@
 package Plants;
 
-public abstract class Seedlings {
+import Properties.Land;
+
+public class Seedlings extends Land {
     private static final String DEF_SEED_NAME = "Weed";
     private static final Integer DEF_SEED_PRICE = 20;
     private static final Integer DEF_SEED_AGE = 1;
